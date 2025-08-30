@@ -20,4 +20,17 @@ footer { border-top: 1px solid #222; opacity: .9; }
   height: 480px;
   background: #1a1a1f;
 }
-#status { opacity:.8; font-size: 12px; }
+  #status { opacity:.8; font-size: 12px; }
+
+  #customize {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    padding: 8px 0;
+  }
+  #customize label {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }

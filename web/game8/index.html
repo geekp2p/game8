@@ -6,13 +6,53 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <header>
-    <strong>PixelVal • 8-bit Village</strong>
-    <span id="status">WASD/Arrow = เดิน, Space = โต้ตอบ</span>
-  </header>
+  <body>
+    <header>
+      <strong>PixelVal • 8-bit Village</strong>
+      <span id="status">WASD/Arrow = เดิน, Space = โต้ตอบ</span>
+    </header>
 
-  <canvas id="game" width="320" height="240"></canvas>
+    <section id="customize">
+      <label>MBTI
+        <select id="mbti">
+          <option value="ISTJ">ISTJ</option>
+          <option value="ISFJ">ISFJ</option>
+          <option value="INFJ">INFJ</option>
+          <option value="INTJ">INTJ</option>
+          <option value="ISTP">ISTP</option>
+          <option value="ISFP">ISFP</option>
+          <option value="INFP">INFP</option>
+          <option value="INTP">INTP</option>
+          <option value="ESTP">ESTP</option>
+          <option value="ESFP">ESFP</option>
+          <option value="ENFP">ENFP</option>
+          <option value="ENTP">ENTP</option>
+          <option value="ESTJ">ESTJ</option>
+          <option value="ESFJ">ESFJ</option>
+          <option value="ENFJ">ENFJ</option>
+          <option value="ENTJ">ENTJ</option>
+        </select>
+      </label>
+      <label>เพศ
+        <select id="gender">
+          <option value="male">ชาย</option>
+          <option value="female">หญิง</option>
+        </select>
+      </label>
+      <label>สีผิว
+        <select id="skin">
+          <option value="#f1c27d">Light</option>
+          <option value="#e0ac69">Tan</option>
+          <option value="#c68642">Brown</option>
+          <option value="#8d5524">Dark</option>
+        </select>
+      </label>
+      <label>อาชีพ
+        <input id="profession" type="text" placeholder="" />
+      </label>
+    </section>
+
+    <canvas id="game" width="320" height="240"></canvas>
 
   <footer>
     <small>Room: <span id="room">local-demo</span> • FPS: <span id="fps">0</span></small>
