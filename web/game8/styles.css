@@ -1,0 +1,23 @@
+:root {
+  --bg: #0e0e11;
+  --fg: #e6e6e6;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; background: var(--bg); color: var(--fg); font-family: ui-monospace, monospace; }
+
+header, footer { padding: 8px 12px; display: flex; gap: 12px; align-items: center; }
+header { border-bottom: 1px solid #222; }
+footer { border-top: 1px solid #222; opacity: .9; }
+
+#game {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  border: 2px solid #333;
+  display: block;
+  margin: 12px auto;
+  width: 640px;   /* scale x2 */
+  height: 480px;
+  background: #1a1a1f;
+}
+#status { opacity:.8; font-size: 12px; }
